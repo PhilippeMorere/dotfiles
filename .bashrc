@@ -186,4 +186,7 @@ source /opt/ros/kinetic/setup.bash
 alias python=python3
 alias pip=pip3
 
-
+# For gurobi
+export GUROBI_HOME="/opt/gurobi652/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
