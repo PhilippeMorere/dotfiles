@@ -180,16 +180,15 @@ let g:airline_theme='solarized'
 
 " Change font & colorscheme
 syntax enable
-set guifont=Inconsolata\ for\ Powerline\ Medium\ 11
+colorscheme solarized
 if has("gui_running")
   set background=light
   let g:airline_solarized_bg='light'
-  colorscheme solarized
-  if has("gui_gtk2")
-  endif
+  set guifont=Inconsolata\ 11
 else
   set background=dark
   let g:airline_solarized_bg='dark'
+  set guifont=Inconsolata\ for\ Powerline\ Medium\ 11
 endif
 
 " Show line numbers
